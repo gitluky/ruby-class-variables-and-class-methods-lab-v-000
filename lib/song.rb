@@ -28,7 +28,7 @@ class Song
     @@genres.uniq
   end
 
-  def self.item_count(items)
+  def item_count(items)
     count_hash = {}
     items.each do |item|
       if count_hash.none?(item)
