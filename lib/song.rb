@@ -34,8 +34,8 @@ class Song
       if count_hash.none?(item)
         count_hash[item] = items.count(item)
       end
-    count_hash
     end
+    count_hash
   end
 
   def self.genre_count
