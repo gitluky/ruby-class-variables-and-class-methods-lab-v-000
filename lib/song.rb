@@ -26,17 +26,21 @@ class Song
     @@genres
   end
 
-  def self.genre_count
-    genre_count_hash = {}
-    genres.each do |genre|
-      if genre_count_hash.none?(genre)
-        genre_count_hash[genre] = genres.count(genre)
+  def self.item_count(items)
+    count_hash = {}
+    items.each do |item|
+      if count_hash.none?(item)
+        count_hash[item] = items.count(item)
       end
-    genre_count_hash
+    count_hash
   end
 
-  def artist_count
+  def self.genre_count
+    item_count(genres)
+  end
 
+  def self.artist_count
+    item_count(artists)
   end
 
 
