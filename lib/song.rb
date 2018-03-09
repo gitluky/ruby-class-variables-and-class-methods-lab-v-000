@@ -10,7 +10,7 @@ class Song
     self.artist = artist
     self.genre = genre
 
-    @@artists << artists
+    @@artists << artist
     @@genres << genre
     @@count+=1
 
