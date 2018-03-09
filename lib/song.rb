@@ -37,3 +37,5 @@ class Song
 
 
 end
+
+Song.genre_count
